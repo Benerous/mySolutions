@@ -1,0 +1,569 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+#wrapper {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background: rgba(38, 38, 38, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    z-index: 9999;
+}
+
+.header_info {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logo {
+    border-radius: 10px;
+    height: 90px;
+    width: 90px;
+    background-color: #ff6760;
+    padding: 15px;
+    opacity: 0.85;
+}
+
+nav > a {
+    color: #d9d9d9;
+    font-family: "Arial";
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 35px;
+    transition: color 1s;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    color: #ff6760;
+    text-decoration: none;
+
+}
+
+.header_nav {
+    display: flex;
+    /*    flex-direction: row-reverse;*/
+}
+
+.info_block_1 {
+    background-color: #2a2a2a;
+    height: auto;
+    /*    justify-content: center;*/
+    font-family: "Microsoft YaHei Light";
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    /*    padding-top: 60px;*/
+    /*    padding-bottom: 60px;*/
+
+}
+
+.content_1 {
+    padding: 20px;
+}
+
+.slogan_1 {
+    margin-top: 100px;
+    font-size: 4.5em;
+    transition: color 1s;
+}
+
+.slogan_2 {
+    font-size: 3em;
+    /*    padding-bottom: 60px;*/
+    transition: color 1s;
+}
+
+.button_1 {
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff6760;
+    border: 1px solid #ff6760;
+    border-radius: 5px;
+    transition: background-color 1s;
+    /*    transition: border 1s;*/
+}
+
+/*
+.reg_form {
+    display: block;
+    height: auto;
+    width: 400px;
+    margin: -15px auto 20px auto;
+    text-align: center;
+    position: fixed;
+    
+}
+
+.input {
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+*/
+
+.button_1:hover,
+.button_2:hover {
+    background-color: #595959;
+    border: 1 px solid #595959;
+}
+
+.info_block_2 {
+    min-height: 370px;
+    background-color: #f8f8f8;
+    padding-bottom: 100px;
+    color: #616161;
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+*/
+}
+
+.content_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 90px;
+    font-family: "Microsoft YaHei Light";
+    line-height: 35px;
+}
+
+.content_block_2 {
+    margin: 10px;
+    padding: 5px;
+    border: #f8f8f8 3px solid;
+    border-radius: 25px;
+    transition: border 1s;
+    width: 400px;
+}
+
+.content_block_2:hover {
+    border: #2a2a2a 3px solid;
+}
+
+.info_block_3 {
+    background-color: #ffffff;
+    height: auto;
+    font-family: "Microsoft YaHei Light";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.content_3_text {
+    padding: 10px;
+    color: #616161;
+    line-height: 40px;
+    font-size: 1.25em;
+}
+
+/*
+.content_3_buttons {
+}
+*/
+
+.button_2 {
+    height: auto;
+    width: auto;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: "Arial";
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff6760;
+    border: 1px solid #ff6760;
+    border-radius: 5px;
+    margin: 15px;
+    transition: background-color 1s;
+}
+
+
+.content_3_img {
+    padding-bottom: 80px;
+}
+
+.img_3 {
+    width: 270px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.img_3:hover {
+    transform: scale(1.1);
+}
+
+.footer_1 {
+    height: auto;
+    background-color: #313131;
+    font-family: "Microsoft YaHei Light";
+    color: #9b9b9b;
+
+}
+
+.footer_1_text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 35px;
+}
+
+.footer_1_contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 35px;
+}
+
+.footer_2 {
+    background-color: #2c2c2c;
+    font-family: "Microsoft YaHei Light";
+    color: #9b9b9b;
+    padding: 30px;
+}
+
+.footer_2_box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_1_social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_img {
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#row_1,
+#row_2,
+#row_3 {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+    #wrapper {
+        width: auto;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        position: static;
+        background: rgba(38, 38, 38, 1);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        z-index: auto;
+    }
+
+    .header_info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        border-radius: 5px;
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+        margin-top: 10px;
+        opacity: 0.85;
+    }
+
+    .header_nav {
+        justify-content: center;
+    }
+
+    nav > a {
+        color: #d9d9d9;
+        font-size: 0.75em;
+        font-family: "Arial";
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 15px;
+        transition: color 1s;
+        text-decoration: none;
+    }
+
+    .info_block_1 {
+        height: auto;
+/*        padding: 10px;*/
+    }
+
+    .content_1 {
+        justify-content: flex-start;
+/*        padding: 10px;*/
+    }
+
+    .slogan_1 {
+/*        margin-top: 50px;*/
+        font-size: 2em;
+        margin-top: 0px;
+    }
+
+    .slogan_2 {
+        line-height: 35px;
+        font-size: 1em;
+    }
+
+    .button_1 {
+        padding: 5px;
+        font-size: 0.75em;
+    }
+
+    .info_block_2 {
+        min-height: auto;
+        padding-bottom: 10px;
+    }
+
+    .content_2 {
+        padding-top: 20px;
+        line-height: 35px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content_block_2 {
+        margin: 10px;
+        padding: 5px;
+        width: auto;
+        font-size: 1em;
+
+    }
+
+    .content_block_2 img {
+        height: 50px;
+        width: 50px;
+    }
+
+
+    .content_3_text {
+        padding: 10px;
+        color: #616161;
+        line-height: 35px;
+        font-size: 1em;
+    }
+
+    .content_3_buttons {
+        justify-content: center;
+    }
+
+    .button_2 {
+        padding: 10px;
+        font-size: 0.75em;
+        margin: 5px;
+    }
+
+    .content_3_img {
+        padding: 20px;
+    }
+
+    .img_3 {
+        width: 135px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .footer_1_text {
+        padding: 20px;
+        line-height: 25px;
+        font-size: 0.85em;
+    }
+
+    .footer_1_text h1 {
+        font-size: 2em;
+    }
+
+    .footer_1_contacts {
+        line-height: 25px;
+        font-size: 0.85em;
+    }
+
+    .footer_2 {
+        background-color: #2c2c2c;
+        font-family: "Microsoft YaHei Light";
+        color: #9b9b9b;
+        padding: 20px;
+    }
+
+    .footer_2_box {
+        font-size: 0.85em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 399px) {
+    #wrapper {
+        width: auto;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        position: static;
+        background: rgba(38, 38, 38, 1);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        z-index: auto;
+    }
+
+    .header_info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        border-radius: 5px;
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+        margin-top: 10px;
+        opacity: 0.85;
+    }
+
+    .header_nav {
+        justify-content: space-around;
+    }
+
+    nav > a {
+        color: #d9d9d9;
+        font-size: 0.75em;
+        font-family: "Arial";
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px;
+        padding-top: 10px;
+        transition: color 1s;
+        text-decoration: none;
+    }
+
+    .info_block_1 {
+        height: auto;
+    }
+
+    .slogan_1 {
+        font-size: 2em;
+        margin-top: 0px;
+    }
+
+    .slogan_2 {
+        line-height: 35px;
+        font-size: 1em;
+    }
+
+    .button_1 {
+        padding: 5px;
+        font-size: 0.75em;
+    }
+
+    .info_block_2 {
+        min-height: auto;
+        padding-bottom: 5px;
+    }
+
+    .content_2 {
+        padding-top: 20px;
+        line-height: 35px;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+
+    .content_block_2 {
+        margin: 10px;
+        padding: 5px;
+        width: auto;
+        font-size: 1em;
+    }
+
+    .content_block_2 img {
+        height: 50px;
+        width: 50px;
+    }
+
+
+    .content_3_text {
+        padding: 10px;
+        color: #616161;
+        line-height: 35px;
+        font-size: 1em;
+    }
+
+    .content_3_buttons {
+        justify-content: center;
+    }
+
+    .button_2 {
+        padding: 5px;
+        font-size: 0.75em;
+        margin: 5px;
+    }
+
+    .content_3_img {
+        padding: 20px;
+    }
+
+    .img_3 {
+        width: 135px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .footer_1_text {
+        padding: 20px;
+        line-height: 25px;
+        font-size: 0.85em;
+    }
+
+    .footer_1_text h1 {
+        font-size: 2em;
+    }
+
+    .footer_1_contacts {
+        line-height: 25px;
+        font-size: 0.85em;
+    }
+
+    .footer_2 {
+        background-color: #2c2c2c;
+        font-family: "Microsoft YaHei Light";
+        color: #9b9b9b;
+        padding: 20px;
+    }
+
+    .footer_2_box {
+        font-size: 0.85em;
+    }
+}
