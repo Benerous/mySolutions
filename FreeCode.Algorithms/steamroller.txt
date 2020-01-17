@@ -1,0 +1,8 @@
+function steamrollArray(arr) {
+  // I'm a steamroller, baby
+  return arr.reduce(function (x, y) {
+    return x.concat(Array.isArray(y) ? steamrollArray(y) : y);
+  }, []);
+}
+
+steamrollArray([[["a"]], [["b"]]]);

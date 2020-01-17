@@ -1,0 +1,18 @@
+function fearNotLetter(str) {
+
+  var start = str.charCodeAt(0);
+  var end = str.charCodeAt(str.length - 1);
+
+  for (var i = start; i < end; i++) {
+    if (str[i-start] !== String.fromCharCode(i)) {
+      str = String.fromCharCode(i);
+      break;
+      } if (i === end - 1) {
+        return undefined;
+        }
+  }
+  
+  return str;
+}
+
+fearNotLetter("abce");

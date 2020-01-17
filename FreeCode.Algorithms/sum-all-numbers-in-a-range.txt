@@ -1,0 +1,13 @@
+function sumAll(arr) {
+  
+  let temp = [];
+  
+  for (let i = 0; i < Math.abs(arr[0] - arr[1]) + 1; i++) {
+    temp[i] = i + Math.min(...arr);
+  }
+
+  console.log(temp);
+  return temp.reduce((sum, i) => sum += i);
+}
+
+sumAll([2, 4]);

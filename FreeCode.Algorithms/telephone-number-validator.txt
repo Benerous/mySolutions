@@ -1,0 +1,41 @@
+function telephoneCheck(str) {
+  // Good luck
+  var hasTenDigits = false;
+  var hasElevenDigits = false;
+  var startsWithOne = false;
+  var hasPermittedCharsOnly = false;
+  var hasCorrectParentheses = false;
+
+  if (str.replace(/[^0-9]/igm, "").length === 10) {
+    hasTenDigits = true;
+  } else {
+    if (str.replace(/[^0-9]/igm, "").length === 11) {
+      hasElevenDigits = true;
+    }
+  }
+
+  if (str.replace(/[^-0-9]/igm, "")[0] === "1") {
+    startsWithOne = true;
+  }
+
+  if (/[^0-9)(_-\s/]/igm.test(str) === false) {
+    hasPermittedCharsOnly = true;
+  }
+
+  if (/\(\d{3}\)/gim.test(str) === true) {
+    hasCorrectParentheses = true;
+  } else if (/[()]/gim.test(str) === true) {
+    hasCorrectParentheses = false;
+  } else hasCorrectParentheses = true;
+
+  if (!hasTenDigits && !hasElevenDigits) {
+    return false;
+  } else if (!hasPermittedCharsOnly || !hasCorrectParentheses) {
+      return false;
+  } else if (hasElevenDigits && !startsWithOne) {
+        return false;
+  } else return true;
+
+}
+
+telephoneCheck("555-5555-555");

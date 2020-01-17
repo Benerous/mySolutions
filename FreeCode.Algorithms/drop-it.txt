@@ -1,0 +1,12 @@
+function dropElements(arr, func) {
+
+  var i = 0;
+
+  while (func(arr[i]) === false && i < arr.length) {
+    arr.splice(i, 1);
+  }
+
+  return arr;
+}
+
+dropElements([1, 2, 3, 4], function(n) {return n >= 3; });

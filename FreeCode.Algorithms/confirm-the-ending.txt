@@ -1,0 +1,22 @@
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+
+  let newArr = str.split("");
+  let newTarget = target.split("");
+  let temp = 0;
+
+  for (let i = newTarget.length - 1; i >= 0; i--){
+    for (let j = newArr.length - 1; j >= newArr.length - newTarget.length; j--){
+      if (newTarget[i] === newArr[j]){
+        temp ++;
+      }
+    }
+  }
+
+  if (temp === newTarget.length) {
+    return true;
+  } else { return false; }
+}
+
+confirmEnding("Bastian", "n");

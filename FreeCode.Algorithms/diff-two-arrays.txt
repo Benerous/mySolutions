@@ -1,0 +1,23 @@
+function diffArray(arr1, arr2) {
+
+  // return arr2.filter(i => {
+  //   for (let x = 0; x < arr1.length; x++) {
+  //     if (i === arr1[x]){
+  //       return 0;
+  //     }
+  //   } 
+  //   return i;
+  // })
+  // .concat(arr1.filter(i => {
+  //   for (let x = 0; x < arr2.length; x++) {
+  //     if (i === arr2[x]){
+  //       return 0;
+  //     }
+  //   } 
+  //   return i;
+  // }));
+
+  return arr2.filter(i => arr1.indexOf(i) === -1).concat(arr1.filter(i => arr2.indexOf(i) === -1));
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
